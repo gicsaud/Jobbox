@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+.profile-container, h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.profile-container .profile-header {
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: #9d3fd1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.profile-container .profile-header .profile-picture {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.profile-container .profile-header .profile-picture .picture-container {
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  display: flex;
+  border: 3px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  transition: all ease-in-out 0.4s;
+}
+.profile-container .profile-header .profile-picture .picture-container:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+.profile-container .profile-header .profile-picture .picture-container:hover img {
+  transform: scale(1.05);
+}
+.profile-container .profile-header .profile-picture .picture-container img {
+  transition: transform ease-in-out 0.4s;
+  height: 150px;
+  width: auto;
+}
+.profile-container .profile-header .info-container {
+  width: auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.profile-container .profile-header .info-container .role {
+  text-transform: uppercase;
+}
+.profile-container .profile-info {
+  display: flex;
+  width: 92%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: -2.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem 2rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+.profile-container .profile-info .info-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-container .profile-info .info-header .icon i {
+  font-size: 1.4rem;
+}
+.profile-container .profile-info .break {
+  width: 100%;
+  color: red;
+}
+.profile-container .profile-info .info-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile-container .profile-info .info-body .info-field {
+  width: auto;
+  margin: 0 2rem;
+}
+@media screen and (max-width: 900px) {
+  .profile-container .profile-header .profile-picture .picture-container {
+    height: 120px;
+    width: 120px;
+  }
+  .profile-container .profile-header .profile-picture .picture-container img {
+    height: 120px;
+  }
+  .profile-container .profile-info {
+    width: 85%;
+  }
+}

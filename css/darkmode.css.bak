@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+
+@font-face{
+
+  font-family: "poppins-medium";
+  src:  url("Fontes/poppins-medium.ttf");
+
+}
+
+p {
+
+  font-family: "poppins-medium" !important;
+  font-size: 14px !important;
+  color: #cd59da !important;
+
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins-medium";
+  background: #f7f0e9;
+  transition: .6s;
+}
+h1 {
+  font-size: 5em;
+  color: #3d3935;
+}
+
+#container {
+  width: 50%;
+  height: 500vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+      margin-left: 155px !important;
+  margin-top: -33px !important;
+}
+.switch input {
+  display: none;
+
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -15px;
+
+  bottom: 0;
+  background: rgb(250, 142, 227);
+  border-radius: 50px;
+  transition: .4s;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 10px;
+  left: 2px;
+  bottom: 42x;
+
+  background: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider {
+  background: #874df3;
+}
+input:checked + .slider:before {
+  transform: translateX(21px);
+}
+.dark-mode {
+  background: #0b0a14;
+}
+.dark-mode h1 {
+  color: #f7f0e9;
+}

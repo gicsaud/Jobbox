@@ -1,0 +1,35 @@
+{
+    "name": "jetphp/jetphp",
+    "description": "JetPHP - Framework gaúcho.",
+    "type": "library",
+    "license": "MIT",
+    "version": "2.0",
+    "authors": [
+        {
+            "name": "João Artur",
+            "email": "contato@joaoartur.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "psr/log": "^1.0",
+        "league/oauth2-google": "^2.0",
+        "stevenmaguire/oauth2-microsoft": "^2.2",
+        "symfony/polyfill-mbstring": "^1.6",
+        "guzzlehttp/guzzle": "^6.3",
+        "ralouphie/mimey": "^1.0"
+    },
+    "scripts": {
+    	"install-framework": [
+            "echo 'Welcome to JetPHP Framework!\n@author João Artur\n\n'",
+            "composer install",
+            "echo 'Thank you for installing JetPHP :)\nStar and watch our github repository! \n'"
+    	]
+    },   
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.0-dev"
+        }
+    }
+
+}
